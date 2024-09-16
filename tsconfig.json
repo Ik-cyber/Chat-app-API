@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                   // Transpile to ES6 (ECMAScript 2015)
+    "module": "commonjs",              // Use CommonJS module system
+    "outDir": "./dist",                // Output directory for compiled files
+    "rootDir": "./src",                // Root directory of your source files
+    "strict": true,                    // Enable all strict type-checking options
+    "esModuleInterop": true,           // Allows importing non-ESM modules
+    "skipLibCheck": true,              // Skip type checking of declaration files (can improve compile time)
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file naming
+    "baseUrl": ".",                    // Base directory for resolving non-relative module names
+    "paths": {                         // Path mapping for module resolution
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"],             // Include all .ts files in the src directory
+  "exclude": ["node_modules", "dist"]  // Exclude node_modules and dist directories
+}
